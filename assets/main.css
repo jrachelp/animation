@@ -2,13 +2,15 @@
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-color: darkslategrey;
+  background-image: url(background.jpg);
+  background-repeat: no-repeat; 
+  background-size: cover
 }
 .ground {
   position: absolute;
   width: 100%;
   height: 20vh;
-  background-color: seagreen;
+  background-color: black;
   bottom: 0;
 }
 img {
@@ -21,17 +23,23 @@ img {
   bottom: 0;
 
 }
+.lightning {
+  position: relative;
+  z-index: 2;
+  left: 50vw;
+  bottom: 100vh;
+}
 .clouds {
   position: relative;
   left: 50vw;
-  bottom: 117vh;
+  bottom: 180vh;
   z-index: 3;
 }
 .rain {
   z-index: 4;
   position: relative;
   left: 50vw;
-  bottom: 100vh;
+  bottom: 150vh;
   width: 100%;
     align-content: center;
 }
@@ -127,5 +135,69 @@ img {
   75% {
     -webkit-transform: translateX(-6px) rotate(-1.2deg);
             transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+.flicker-1 {
+  -webkit-animation: flicker-1 3s infinite both;
+          animation: flicker-1 3s infinite both;
+}
+@-webkit-keyframes flicker-1 {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  41.99% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0;
+  }
+  43% {
+    opacity: 0;
+  }
+  43.01% {
+    opacity: 1;
+  }
+  47.99% {
+    opacity: 1;
+  }
+  48% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  49.01% {
+    opacity: 1;
+  }
+}
+@keyframes flicker-1 {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  41.99% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0;
+  }
+  43% {
+    opacity: 0;
+  }
+  43.01% {
+    opacity: 1;
+  }
+  47.99% {
+    opacity: 1;
+  }
+  48% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  49.01% {
+    opacity: 1;
   }
 }
