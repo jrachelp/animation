@@ -43,10 +43,7 @@ img {
   width: 100%;
     align-content: center;
 }
-/* .drops {
-  animation-name: slide-in-top;
-    animation-duration: infinite;
-} */
+
 .slide-in-top {
   -webkit-animation: slide-in-top 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
           animation: slide-in-top \ cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
